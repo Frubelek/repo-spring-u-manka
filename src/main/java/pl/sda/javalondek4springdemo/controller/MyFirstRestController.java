@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import pl.sda.javalondek4springdemo.service.MyService;
 
-import java.util.Locale;
-
 @RestController
 public class MyFirstRestController {
 
@@ -35,13 +33,13 @@ public class MyFirstRestController {
         return "hello rest:P";
     }
 
-    // convert-name?myName=Mariusz
+    // /convert-name?myName=Pawcio
     @GetMapping("/convert-name")
     public String convertMyNameToUpperCase(@RequestParam("myName") String name) {
 
         String result = myService.convertToUpperCase(name);
 
-        logger.info("input param: [{}], result [{}]", name, result);
+        logger.info("input param: [{}], result: [{}]", name, result);
         return result;
     }
 }

@@ -1,8 +1,8 @@
 ### MVC pattern
-    * M -model
-    * V -view
+    * M - model
+    * V - view
     * C - controller
-    
+
 V - widoki są serwowane przez kontroler
 C - serwuje widoki/odbiera request'y
 M - dane i operacje na nich

@@ -19,10 +19,10 @@ public class MyService {
     }
 
     public String convertToUpperCase(String string) {
-        // if (string !=  null) --> nonNull
-        String result = nonNull(string) ? string.toUpperCase() : null;
+        // if (string != null) --> nonNull
+        String result = nonNull(string) ? string.toUpperCase() : "parameter was null!!!";
 
-        logger.info("object before conversion: [{}], and after [{}]", string, result);
+        logger.info("object before conversion: [{}], and after: [{}]", string, result);
 
         return result;
     }
