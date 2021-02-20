@@ -13,6 +13,12 @@ public class MyFirstRestController {
     @GetMapping("/say-something")
     public String saySomething() {
 
+        // logging levels
+        // trace
+        // debug
+        // info <-- current level
+        // warn --
+        // error -- inside catch
         logger.info("/say-something");
         logger.debug("is it visible???");
         logger.trace("and this??");
